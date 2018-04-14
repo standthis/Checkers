@@ -62,12 +62,37 @@ namespace Checkers
             throw new NotImplementedException();
         }
     }
-    
+
+    public class King : IPiece
+    {
+        public Status Status => throw new NotImplementedException();
+
+        public Color Color => throw new NotImplementedException();
+
+        public int Position => throw new NotImplementedException();
+
+        public IEnumerable<int> CapturingMoves(IBoard board)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Move(int destination)
+        {
+            throw new NotImplementedException();
+        }
+
+        public IEnumerable<int> NormalMoves(IBoard board)
+        {
+            throw new NotImplementedException();
+        }
+    }
+
     class Program
     {
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
+            King KingRichard = new King();
         }
     }
 }
